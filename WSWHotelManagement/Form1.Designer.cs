@@ -62,7 +62,7 @@ namespace WSWHotelManagement
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(252, 29);
             this.btnLogin.TabIndex = 1;
-            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.Text = "LOG IN";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
