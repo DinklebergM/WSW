@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Microsoft.VisualBasic;
 
 
 namespace WSWHotelManagement
@@ -51,5 +51,45 @@ namespace WSWHotelManagement
                 MessageBox.Show("Fill Everything", "Warning");
             }
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (tbDefaultPrice.Text != "" && tbRoomClass.Text != "" && tbRoomNumber.Text != "" && cbBed.Text != "" && cbExtraBed.Text != "")
+            {
+                string RoomNumber = tbRoomNumber.Text;
+                string RoomClass = tbRoomClass.Text;
+                int Bed = int.Parse(cbBed.Text);
+                int ExtraBed = int.Parse(cbExtraBed.Text);
+                int Price = int.Parse(tbDefaultPrice.Text);
+
+                query = "UPDATE rooms SET RoomClass='" + RoomClass + "', Bed=" + Bed + ", ExtraBeds= " + ExtraBed + ", Price=" + Price + " where RoomNumber = '" + RoomNumber + "'";
+                fn.setData(query, "Room has been updatet");
+
+                frmRooms_Load(this, null);
+            }
+            else
+            {
+                MessageBox.Show("Fill Everything", "Warning");
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse( Interaction.InputBox("Type room ID", "Delete Dialog"));
+
+            var confirmResult = MessageBox.Show("Are you sure to delete this room??","Confirm Delete!!",MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+               
+                query = "DELETE from rooms where RoomNumber = " + id + "";
+                fn.setData(query, "Room has been Deleted");
+                frmRooms_Load(this, null);
+            }
+            else
+            {
+                MessageBox.Show("no");
+                // If 'No', do something here.
+            }
+           }  
     }
 }

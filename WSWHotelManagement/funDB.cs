@@ -27,6 +27,7 @@ namespace WSWHotelManagement
             SqlDataAdapter dAdapter = new SqlDataAdapter(cmd);
             DataSet dSet = new DataSet();
             dAdapter.Fill(dSet);
+
             return dSet;
         }
 
@@ -52,7 +53,6 @@ namespace WSWHotelManagement
             cmd = new SqlCommand(query, sqlConnection);
             SqlDataReader sqlDataReader = cmd.ExecuteReader();
             
-
             return sqlDataReader;
         }
     }
