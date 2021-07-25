@@ -20,9 +20,10 @@ namespace WSWHotelManagement
         string query;
         public frmCheckIn()
         {
+          
             InitializeComponent();
         }
-
+       
 
         public void setComboBox(string query, ComboBox comboBox)
         {

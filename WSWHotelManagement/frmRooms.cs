@@ -15,7 +15,8 @@ namespace WSWHotelManagement
     public partial class frmRooms : Form
     {
         funDB fn = new funDB();
-        String query;
+        
+        string query;
 
         public frmRooms()
         {

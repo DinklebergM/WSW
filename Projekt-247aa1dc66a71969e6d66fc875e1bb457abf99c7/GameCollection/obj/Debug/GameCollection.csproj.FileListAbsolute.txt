@@ -1,0 +1,12 @@
+C:\teamcool\OneDrive\AE Projekt\GameCollection\bin\Debug\GameCollection.exe.config
+C:\teamcool\OneDrive\AE Projekt\GameCollection\bin\Debug\GameCollection.exe
+C:\teamcool\OneDrive\AE Projekt\GameCollection\bin\Debug\GameCollection.pdb
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\GameCollection.csprojAssemblyReference.cache
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\GameCollection.Form1.resources
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\GameCollection.Properties.Resources.resources
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\GameCollection.csproj.GenerateResource.cache
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\GameCollection.csproj.CoreCompileInputs.cache
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\GameCollection.exe
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\GameCollection.pdb
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\DestroyTheCubes.FormDestroyTheCubes.resources
+C:\teamcool\OneDrive\AE Projekt\GameCollection\obj\Debug\GameCollection.TicTacToe.resources
