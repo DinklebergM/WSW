@@ -123,6 +123,7 @@ namespace WSWHotelManagement
             this.tbRoomNumber.Name = "tbRoomNumber";
             this.tbRoomNumber.Size = new System.Drawing.Size(259, 34);
             this.tbRoomNumber.TabIndex = 32;
+            this.tbRoomNumber.TextChanged += new System.EventHandler(this.tbRoomNumber_TextChanged);
             // 
             // lblCheckOutDate
             // 

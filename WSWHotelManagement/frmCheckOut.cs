@@ -16,5 +16,16 @@ namespace WSWHotelManagement
         {
             InitializeComponent();
         }
+        funDB fn = new funDB();
+
+        string query;
+
+        private void tbRoomNumber_TextChanged(object sender, EventArgs e)
+        {
+            query = "select room from rooms where RoomNumber = '" + tbRoomNumber.Text + "' ";
+            DataSet dataSet = fn.getData(query);
+           tbName.Text = dataSet.Tables[0].Rows[0][0].ToString();
+            roid = int.Parse(dataSet.Tables[0].Rows[0][1].ToString());
+        }
     }
 }
